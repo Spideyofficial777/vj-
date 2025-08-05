@@ -21,7 +21,7 @@ app.add_middleware(
 )
 
 # MongoDB connection
-MONGO_URL = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
+MONGO_URL = os.environ.get('MONGO_URL', 'mongodb+srv://halabe8690:0U7oU4GKtkiQsBGx@cluster0.a9ui5gv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 client = AsyncIOMotorClient(MONGO_URL)
 db = client.vishal_jwellers
 
