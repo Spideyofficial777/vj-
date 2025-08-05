@@ -32,6 +32,8 @@ orders_collection = db.orders
 cart_collection = db.cart
 admins_collection = db.admins
 
+print("Returning products:", products)
+
 # Pydantic models
 class User(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
